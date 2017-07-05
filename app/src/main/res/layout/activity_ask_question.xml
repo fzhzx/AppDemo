@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:padding="8dp"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:id="@+id/ask_que_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/ask_que_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,下面那个是正确的"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ask_que_choose_que"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="18dp"
+            android:textColor="@color/theme_green"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ask_que_title_ll"
+        android:scaleType="fitXY"
+        android:src="@drawable/line"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/ask_que_choose_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/ImageView02">
+
+        <ListView
+            android:id="@+id/ask_que_choose_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ask_que_choose_ll"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/ask_que_que_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ImageView03">
+        <Button
+            android:id="@+id/ask_que_answer_commit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ask_the_answer"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/image_btn_check_press"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="600"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/browse"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32030"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</RelativeLayout>

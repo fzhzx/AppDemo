@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppDemo</string>
+
+    <string name="ask_question_commit">确定</string>
+    <string name="ask_the_answer">回答</string>
+    <string name="src_voice">音频</string>
+</resources>
